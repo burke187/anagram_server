@@ -1,0 +1,13 @@
+<!-- this is redirect file -->
+
+<h1>Show a list of anagrams for: <%=@user_input%></h1>
+
+<h2>Anagrams</h2>
+  <ul>
+      <% if @results %>
+        <% @results.each do |word| %>
+          <li><%= word %></li>
+        <% end %>
+      <% end %>
+  </ul>
+ <a href="/">Go Home</a>  <!-- href="/" => go to the root directory-->
